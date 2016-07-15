@@ -36,4 +36,4 @@ console.log( format("81234567") )         // => "08 123 45 67"
 
 ## License
 
-MIT
+MIT, Read more at the [LICENSE](LICENSE.md) file.

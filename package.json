@@ -1,6 +1,6 @@
 {
   "name": "format-phone-swedish",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Formats numbers in Swedish phonenumber format with their 264 area codes",
   "main": "lib/index.js",
   "scripts": {

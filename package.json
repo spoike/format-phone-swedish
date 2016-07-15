@@ -1,6 +1,6 @@
 {
   "name": "format-phone-swedish",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Formats Swedish telephone numbers with traditional Swedish grouping and their 264 area codes",
   "main": "lib/index.js",
   "repository": {
@@ -19,8 +19,7 @@
   ],
   "author": "Mikael Brassman <mishakun@gmail.com> (https://twitter.com/spoike)",
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "tape": "^4.6.0",
     "faucet": "0.0.1",

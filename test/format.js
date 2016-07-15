@@ -75,7 +75,7 @@ test('non geographical 3 digit area codes', function(t) {
   var areaCodes = [
     "010", // geographically independent area code
     "020", // "frisamtal"
-    "072", "073", "076", "079", // cell phones
+    "070", "072", "073", "076", "079", // cell phones
     "075", // personal number services
     "077", // shared cost services
     "078", // operator services

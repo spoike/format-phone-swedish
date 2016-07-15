@@ -3,6 +3,9 @@
 Module for formatting strings to Swedish phone numbers. For international phone
 numbers use [format-phone](https://www.npmjs.com/package/format-phone) instead.
 
+Supports [traditional grouping](https://sv.wikipedia.org/wiki/Telefonnummer#Sverige)
+of telephone numbers, all two digit and three digit [area codes](https://sv.wikipedia.org/wiki/Lista_%C3%B6ver_svenska_riktnummer).
+
 ## Installation
 
 Use npm:

@@ -7,6 +7,8 @@ Supports [traditional grouping](https://sv.wikipedia.org/wiki/Telefonnummer#Sver
 of telephone numbers. All two, three, and four digit [area codes](https://sv.wikipedia.org/wiki/Lista_%C3%B6ver_svenska_riktnummer)
 are supported as well.
 
+Will remove `+46` prefix code if present.
+
 ## Installation
 
 Use npm:
@@ -19,9 +21,14 @@ npm install --save format-phone-swedish
 
 ```js
 import { format } from "format-phone-swedish"
-let phoneNumber = "081234567"
 
-console.log(format(phoneNumber)) // => "08 123 45 67"
+console.log( format("081234567") )   // => "08 123 45 67"
+
+// Removes +46 country prefix
+console.log( format("+4681234567") ) // => "08 123 45 67"
+
+// Adds missing 0
+console.log( format("81234567") ) // => "08 123 45 67"
 ```
 
 ## License

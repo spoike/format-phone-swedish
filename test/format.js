@@ -9,6 +9,13 @@ test('will add missing zero', function(t) {
   t.equal(m.format("812345678"), "08 123 456 78", "Should add missing first 0 digit");
 });
 
+test('remove +46 number if present', function(t) {
+  t.plan(2);
+
+  t.equal(m.format("+46812345678"), "08 123 456 78", "Should remove +46 country code prefix");
+  t.equal(m.format("+460812345678"), "08 123 456 78", "Should remove +46 country code prefix");
+});
+
 test('08 number', function(t) {
 	t.plan(4);
 

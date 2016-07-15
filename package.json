@@ -3,6 +3,10 @@
   "version": "0.1.4",
   "description": "Formats numbers in Swedish phonenumber format with their 264 area codes",
   "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spoike/format-phone-swedish.git"
+  },
   "scripts": {
     "test": "tape test/**/*.js | faucet",
     "nyan": "tape test/**/*.js | tnyan"

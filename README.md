@@ -1,6 +1,7 @@
 # format-phone-swedish
 
-Module for formatting strings to swedish phonenumbers.
+Module for formatting strings to Swedish phone numbers. For international phone
+numbers use [format-phone][https://www.npmjs.com/package/format-phone] instead.
 
 ## Installation
 

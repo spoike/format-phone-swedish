@@ -2,7 +2,7 @@
   "name": "format-phone-swedish",
   "version": "0.1.0",
   "description": "Formats numbers in Swedish phonenumber format with their 264 area codes",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "tape test/**/*.js | faucet",
     "nyan": "tape test/**/*.js | tnyan"

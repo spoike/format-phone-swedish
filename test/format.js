@@ -16,6 +16,14 @@ test('remove +46 number if present', function(t) {
   t.equal(m.format("+460812345678"), "08 123 456 78", "Should remove +46 country code prefix");
 });
 
+test('custom area code separator', function(t) {
+  t.plan(3);
+
+  t.equal(m.format("0812345678", "-"), "08-123 456 78");
+  t.equal(m.format("0812345678", "<span>-</span>"), "08<span>-</span>123 456 78");
+  t.equal(m.format("0812345678", "^_^"), "08^_^123 456 78");
+});
+
 test('08 number', function(t) {
 	t.plan(4);
 

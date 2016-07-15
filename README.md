@@ -22,13 +22,14 @@ npm install --save format-phone-swedish
 ```js
 import { format } from "format-phone-swedish"
 
-console.log( format("081234567") )   // => "08 123 45 67"
+console.log( format("081234567") )      // => "08 123 45 67"
+console.log(format("081234567", "-"))   // => "08-123 45 67"
 
 // Removes +46 country prefix
-console.log( format("+4681234567") ) // => "08 123 45 67"
+console.log( format("+4681234567") )    // => "08 123 45 67"
 
 // Adds missing 0
-console.log( format("81234567") ) // => "08 123 45 67"
+console.log( format("81234567") )       // => "08 123 45 67"
 ```
 
 ## License

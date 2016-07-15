@@ -1,0 +1,17 @@
+{
+  "name": "format-phone-swedish",
+  "version": "1.0.0",
+  "description": "Formats numbers in Swedish phonenumber format with their 264 area codes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "format",
+    "phone",
+    "numbers",
+    "phone"
+  ],
+  "author": "Mikael Brassman <mishakun@gmail.com> (https://twitter.com/spoike)",
+  "license": "MIT"
+}

@@ -22,6 +22,17 @@ test('should ignore weird extension number format and other characters', functio
   t.equal(m.format("+46 (0) 8 - 12345678"), "08 123 456 78", "Should remove weird characters");
 });
 
+test('handle numbers without area code', function(t) {
+  t.plan(6);
+
+  t.equal(m.format("112"), "112", "Three digit number");     // Nödnummer vid fara för liv, egendom eller miljö
+  t.equal(m.format("1177"), "1177", "Four digit number");    // Sjukvårdsrådgivning
+  t.equal(m.format("11414"), "114 14", "Five digit number"); // Polisens nummer vid icke akuta händelser
+  t.equal(m.format("123456"), "12 34 56", "Six digit number");
+  t.equal(m.format("1234567"), "123 45 67", "Seven digit number");
+  t.equal(m.format("12345678"), "123 456 78", "Eight digit number");
+});
+
 test('custom area code separator', function(t) {
   t.plan(3);
 

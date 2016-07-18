@@ -32,6 +32,14 @@ console.log( format("+46 (0) 81234567") ) // => "08 123 45 67"
 
 // Adds missing 0
 console.log( format("81234567") )         // => "08 123 45 67"
+
+// Supports number grouping for numbers without area codes
+console.log( format("112") )              // => "112"
+console.log( format("1177") )             // => "1177"
+console.log( format("11414") )            // => "114 14"
+console.log( format("123 456") )          // => "12 34 56"
+console.log( format("1234567") )          // => "123 45 67"
+console.log( format("12345678") )         // => "123 456 78"
 ```
 
 ## License

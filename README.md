@@ -25,6 +25,8 @@ npm install --save format-phone-swedish
 (number: String, separator?: String) => String
 ```
 
+| Param                | Description                                      |
+| -------------------- | ------------------------------------------------ |
 | `number: String`     | Input telephone number                           |
 | `separator?: String` | The separator character to use. Default is `" "` |
 

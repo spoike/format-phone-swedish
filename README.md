@@ -37,32 +37,32 @@ format(number: String, separator?: String) => String
 | `number: String`     | Input telephone number                           |
 | `separator?: String` | The separator character to use. Default is `" "` |
 
-*Example:* Normal 08 (Stockholm) number:
+**Example:** Normal 08 (Stockholm) number:
 
 ```js
 console.log( format("081234567") )        // => "08 123 45 67"
 ```
 
-*Example:* Change the area code separator from the default `" "` one to
+**Example:** Change the area code separator from the default `" "` one to
 `"-"`.
 
 ```js
 console.log( format("081234567", "-") )   // => "08-123 45 67"
 ```
 
-*Example:* Phone number with country code and extension number.
+**Example:** Phone number with country code and extension number.
 
 ```js
 console.log( format("+46 (0) 81234567") ) // => "08 123 45 67"
 ```
 
-*Example:* Phone number with missing leading 0 for area code.
+**Example:** Phone number with missing leading 0 for area code.
 
 ```js
 console.log( format("81234567") )         // => "08 123 45 67"
 ```
 
-*Example:* Supports number grouping for telephone numbers
+**Example:** Supports number grouping for telephone numbers
 without area codes and local area numbers.
 
 ```js

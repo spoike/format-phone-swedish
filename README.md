@@ -19,10 +19,17 @@ npm install --save format-phone-swedish
 
 ## API
 
-### `format-phone-swedish.format`
+### format()
+
+```js
+import { format } from 'format-phone-swedish';
+```
+
+Takes a phone number-like string and formats it to a string with traditional
+Swedish grouping.
 
 ```rtype
-(number: String, separator?: String) => String
+format(number: String, separator?: String) => String
 ```
 
 | Param                | Description                                      |
@@ -30,26 +37,35 @@ npm install --save format-phone-swedish
 | `number: String`     | Input telephone number                           |
 | `separator?: String` | The separator character to use. Default is `" "` |
 
-Takes a phone number-like string and formats it to traditional Swedish
-grouping.
-
-## Usage
+*Example:* Normal 08 (Stockholm) number:
 
 ```js
-import { format } from "format-phone-swedish"
-
 console.log( format("081234567") )        // => "08 123 45 67"
+```
 
-// Changes the area code separator
+*Example:* Change the area code separator from the default `" "` one to
+`"-"`.
+
+```js
 console.log( format("081234567", "-") )   // => "08-123 45 67"
+```
 
-// Removes +46 country prefix and extension numbers
+*Example:* Phone number with country code and extension number.
+
+```js
 console.log( format("+46 (0) 81234567") ) // => "08 123 45 67"
+```
 
-// Adds missing 0
+*Example:* Phone number with missing leading 0 for area code.
+
+```js
 console.log( format("81234567") )         // => "08 123 45 67"
+```
 
-// Supports number grouping for numbers without area codes
+*Example:* Supports number grouping for telephone numbers
+without area codes and local area numbers.
+
+```js
 console.log( format("112") )              // => "112"
 console.log( format("1177") )             // => "1177"
 console.log( format("11414") )            // => "114 14"

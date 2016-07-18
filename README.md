@@ -17,6 +17,20 @@ Use npm:
 npm install --save format-phone-swedish
 ```
 
+## API
+
+### `format-phone-swedish.format`
+
+```rtype
+(number: String, separator?: String) => String
+```
+
+| `number: String`     | Input telephone number                           |
+| `separator?: String` | The separator character to use. Default is `" "` |
+
+Takes a phone number-like string and formats it to traditional Swedish
+grouping.
+
 ## Usage
 
 ```js
